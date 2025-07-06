@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "z5PLA3DbwOi7cb2rghNqi+IN6+FZcog5TU+eaj7OvIm9RnAgAj2gVjmYoOvIu/XzuuIxbmUiI5oFB12Ad3r4cg==",
+  "success": true,
+  "projectFilePath": "E:\\MyProjects\\Renart Product Listing\\Renart.ProductListing\\Renart.ProductListing.API\\Renart.ProductListing.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\faruk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\faruk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\faruk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\faruk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\faruk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\faruk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
