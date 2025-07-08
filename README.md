@@ -77,3 +77,8 @@ To run this project, you need a valid [GoldAPI.io](https://www.goldapi.io/) API 
   "Symbol": "XAU",
   "Currency": "USD"
 }
+```
+Screenshots
+
+![image](https://github.com/user-attachments/assets/f6b02a18-bade-490b-b267-0980dfdd8343)
+
