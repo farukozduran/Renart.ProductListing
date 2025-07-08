@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import '../styles/ProductCard.css'
 
 const renderStars = (score) => {
   const fullStars = Math.floor(score);
