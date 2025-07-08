@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Avenir', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  min-height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1200px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+}
+
+.arrow.left {
+  left: -2rem;
+}
+
+.arrow.right {
+  right: -2rem;
+}
+
+.keen-slider {
+  overflow: hidden;
+}
+
+.keen-slider__slide {
+  min-width: 300px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.color-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.color-circle.active {
+  border: 2px solid black;
+}
+
+.color-label {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #666;
+}
+
+.color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.color-dot.selected {
+  border: 2px solid #333;
+}
+
+
+
+
+
+
+

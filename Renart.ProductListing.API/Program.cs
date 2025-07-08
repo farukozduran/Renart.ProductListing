@@ -19,7 +19,19 @@ namespace Renart.ProductListing.API
             builder.Services.AddHttpClient<GoldPriceService>();
             builder.Services.AddSingleton<GoldPriceService>();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5174") // React frontend URL
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+
             var app = builder.Build();
+
+            app.UseCors("AllowFrontEnd");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
