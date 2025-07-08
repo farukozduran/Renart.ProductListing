@@ -1,75 +1,79 @@
-# 🛍️ Product Listing App – Case Study
+# 🛍️ Renart Product Listing App – Full-Stack Case Study
 
-This project is a **Full-Stack Product Listing Application** developed as a case study for the Renart Full-Stack Development Internship.
-
-It demonstrates core backend and frontend functionalities, including dynamic pricing based on real-time gold prices, image selection by color, responsive UI, and more.
+This is a full-stack product listing application developed as a case study for the **Renart Full-Stack Development Internship**.  
+It demonstrates practical backend and frontend skills including API development, real-time data handling, and responsive UI features.
 
 ---
 
 ## 🚀 Project Overview
 
-The application consists of two parts:
+The application consists of two main parts:
 
-1. **Backend API**:  
-   - Built with **ASP.NET Core Web API**  
-   - Reads product data from a JSON source  
-   - Calculates price dynamically based on:
-     ```
-     Price = (popularityScore + 1) * weight * goldPrice
-     ```
-   - Retrieves real-time gold price from [goldapi.io](https://www.goldapi.io)
+### 🧩 Backend API (Completed)
+- Built with **ASP.NET Core Web API**
+- Reads product data from a JSON file
+- Dynamically calculates product prices based on the latest gold price from [GoldAPI.io](https://www.goldapi.io/)
+- Handles fallback mechanisms for reliability
 
-2. **Frontend App** (Coming next):  
-   - Will display product list with:
-     - Product name, price, and popularity score
-     - Color picker to change product image
-     - Responsive carousel with swipe and arrow support
+### 🎨 Frontend App (In Progress)
+- Built with **React (Vite)**
+- Displays product cards with:
+  - Product name, price, and popularity score (1 decimal, 0–5 scale)
+  - Color picker that switches product images
+  - Responsive carousel with arrow and swipe support
+  - Custom fonts and clean UI layout
 
 ---
 
-## ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
-### Backend:
-- C# / ASP.NET Core Web API
-- HttpClient (for external API calls)
-- JSON data handling
+### Backend
+- **C# / ASP.NET Core Web API**
+- **HttpClient** for consuming external APIs
+- JSON file-based data handling
 - Configuration via `appsettings.json`
+
+### Frontend
+- **React (Vite)**
+- Classical CSS (without Tailwind)
+- **keen-slider** for carousel functionality
+- Responsive design principles
+
+---
+
+## ⚙️ Dynamic Price Calculation Formula
+
+
+
+- `popularityScore`: Product-specific percentage score (0–100)
+- `weight`: Product weight in grams
+- `goldPrice`: Real-time gold price (USD/gram) from goldapi.io
+
+### 🔁 Fallback Behavior
+If real-time data fails:
+1. Uses previous day's price (if available)
+2. Defaults to a fallback price of **70 USD/g**
 
 ---
 
 ## 📦 API Endpoint
 
-| Endpoint       | Method | Description              |
-|----------------|--------|--------------------------|
-| `/api/products` | GET    | Returns product list with calculated prices |
+| Endpoint         | Method | Description                          |
+|------------------|--------|--------------------------------------|
+| `/api/products`  | GET    | Returns full product list with calculated prices |
 
 ---
 
-## 📈 Dynamic Price Calculation
+## 🔐 GoldAPI Integration
 
-Prices are calculated using real-time gold price data retrieved from [GoldAPI.io](https://www.goldapi.io).  
-If the latest price is unavailable (due to timezone or delay), the app falls back to the previous day's price.  
-If both fail, a fallback value (70 USD/g) is used to ensure reliability.
+To run this project, you need a valid [GoldAPI.io](https://www.goldapi.io/) API key.
 
----
-
-## 🔐 API Key
-
-To run this project, you need a valid API key from [GoldAPI.io](https://www.goldapi.io/).
-
-Add your API key to the `appsettings.json` file:
-
+### Add your key to the config:
 ```json
+// appsettings.json
 "GoldApi": {
   "ApiKey": "your-api-key",
   "BaseUrl": "https://www.goldapi.io/api",
   "Symbol": "XAU",
   "Currency": "USD"
 }
-```
-
-📤 Deployment
-The app will be deployed via Vercel for frontend and Render or Railway for backend.
-
-📝 License
-This project is for educational and demonstration purposes only.
