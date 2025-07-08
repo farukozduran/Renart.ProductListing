@@ -35,7 +35,7 @@ The application consists of two main parts:
 
 ### Frontend
 - **React (Vite)**
-- Classical CSS (without Tailwind)
+- Classical CSS
 - **keen-slider** for carousel functionality
 - Responsive design principles
 
@@ -52,7 +52,7 @@ The application consists of two main parts:
 ### 🔁 Fallback Behavior
 If real-time data fails:
 1. Uses previous day's price (if available)
-2. Defaults to a fallback price of **70 USD/g**
+2. Defaults to a fallback price of **100 USD/g**
 
 ---
 
