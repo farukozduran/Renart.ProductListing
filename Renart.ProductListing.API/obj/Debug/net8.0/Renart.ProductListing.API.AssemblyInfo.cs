@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Renart.ProductListing.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbcf4373e284b0fda76a2adcc11af3c149a56add")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c4253b935a7b06a758a130c78eea067af5ea0e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Renart.ProductListing.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Renart.ProductListing.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
